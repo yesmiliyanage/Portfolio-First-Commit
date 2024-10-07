@@ -161,11 +161,11 @@ nav ul li a:hover{
 
 /* Styling for the blog and projects section of the home page */
 #homepage-blog{
-    background-color: rgba(165, 165, 165, 0.8);
+    background-color: rgb(22, 22, 22);
 }
 
 #homepage-blog h1{
-    color: #474747;
+    color: rgb(169, 223, 223);
     padding-top: 70px;
     text-align: center;
     margin-bottom: 50px;
@@ -179,6 +179,7 @@ nav ul li a:hover{
     padding-bottom: 40px;
     text-decoration: underline;
     font-weight: 500;
+    color: white;
 }
 
 .homepage-blog figure{
@@ -200,7 +201,7 @@ nav ul li a:hover{
 }
 
 .homepage-blog figure img:hover{
-    box-shadow: 10px 10px 10px -7px black;
+    box-shadow: 10px 10px 10px -7px rgb(255, 255, 255);
     transition: all 1s;
 }
 
@@ -208,20 +209,26 @@ nav ul li a:hover{
     height: 400px;
     width: 300px;
     border: 4px solid rgb(169, 223, 223);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #464646;
+
     margin-bottom: 40px;
 }
 
+#homepage-web{
+    background-image: url(images/webProject.png);
+    background-size: cover;
+}
+
+#homepage-java{
+    background-image: url(images/javaProject.jpg);
+    background-size: cover;
+}
 .homepage-projects-title{
     background-color: white;
     padding: 5px 10px;
 }
 
 .homepage-projects-thumbnail:hover{
-    box-shadow: 10px 10px 10px -7px black;
+    box-shadow: 10px 10px 10px -7px rgb(255, 255, 255);
     transition: all 1s;
 }
 
@@ -234,10 +241,11 @@ nav ul li a:hover{
 }
 
 .homepage-blog-button{
-    background-color: #151515;
+    background-color: #7e7e7e;
     border: none;
     padding: 10px 20px;
     margin-bottom: 50px;
+    border-radius: 3px;
 }
 .homepage-blog-button a{
     color: rgb(169, 223, 223);
@@ -247,6 +255,7 @@ nav ul li a:hover{
 .homepage-blog-button:hover{
     background-color: #474747;
     transition: background-color 0.5s;
+    cursor: pointer;
 }
 
 .fa-arrow-right-long{
@@ -297,14 +306,14 @@ nav ul li a:hover{
 }
 
 #homepage-contact-content button:hover a{
-    color: black;
+    color: rgb(169, 223, 223);
     transition: color 0.5s;
 }
 
 
 /* styling for the about page of the website */
 #aboutpage-main{
-    background-image: url(images/aboutMe.jpg);
+    background-image: url(images/IMG_5241.jpg);
     height: 100vh;
     background-size: cover;
     color: rgb(7, 7, 7);
@@ -317,7 +326,7 @@ nav ul li a:hover{
 }
 
 #aboutpage-main p{
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.7);
     width: 800px;
     padding: 40px;
 }
@@ -329,6 +338,84 @@ nav ul li a:hover{
     font-size: 70px;
 }
 
+#aboutpage-main p button{
+    margin-left: 220px;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #474747;
+    cursor: pointer;
+}
+
+#aboutpage-main p button:hover{
+    background-color: #7e7e7e;
+    transition: background-color 0.5s;
+}
+
+
+#aboutpage-main p button a{
+    text-decoration: none;
+    color: rgb(169, 223, 223);
+}
+
+#aboutpage-content{
+    background-color: black;
+    color: white;
+    padding-top: 60px;
+}
+
+#aboutpage-content h1{
+    text-align: center;
+    color: rgb(169, 223, 223);
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+.aboutpage-interest{
+    display: flex;
+}
+
+.aboutpage-interest img{
+    width: 300px;
+}
+
+#aboutpage-interest1{
+    padding-top: 50px;
+    padding: 50px 50px;
+}
+
+#aboutpage-interest2{
+    padding: 50px 50px;
+}
+
+#aboutpage-interest1 div{
+    padding-left: 40px;
+}
+
+#aboutpage-interest2 div{
+    padding-right: 40px;
+}
+
+#aboutpage-interest1 div button{
+    padding: 10px 20px;
+    border: none;
+    background-color: #474747;
+    cursor: pointer;
+}
+
+#aboutpage-interest1 div button:hover{
+    background-color: #7e7e7e;
+    transition: background-color 0.5s;
+}
+
+
+#aboutpage-interest1 div button a{
+    text-decoration: none;
+    color: rgb(169, 223, 223);
+}
+
+
+
 
 
 
@@ -338,7 +425,45 @@ nav ul li a:hover{
 
 
 /* styling for the blogs page of the website */
+#blog-section{
+    padding-top: 50px;
+    background-color: #dbdbdb;
+}
 
+#blog-section article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#blog-section h1,h2{
+    text-align: center;
+}
+
+#blog-section article img{
+    width: 500px;
+    margin-top: 40px;
+}
+
+#blog-section h1{
+    padding-top: 40px;
+    font-size: 45px;
+}
+
+#blog-section h2{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+#blog-section p{
+    padding-top: 50px;
+}
+
+#blog-section article p{
+    width: 1100px;
+}
 
 
 
