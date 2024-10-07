@@ -1,0 +1,390 @@
+/* Styling for the whole website */
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0; /*remove default margin*/
+    padding: 0; /*remove default padding*/
+    scroll-behavior: smooth;
+}
+
+/* Styling for the navigation bar */
+header{
+    background-color: rgb(130, 130, 130);
+    color: rgb(56, 57, 57);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5000;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex; 
+    list-style-type: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    
+}
+
+nav ul li{
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    margin-right: 20px;
+    padding-right: 10px;
+    color: rgb(56, 57, 57);
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav ul li a:hover{
+    background-color: rgb(79, 79, 79);
+    color: rgb(169, 223, 223);
+    border-radius: 2px;
+    transition: all 0.5s;
+}
+
+#logo{
+    width: 50px;
+    margin-left: 50px;
+
+}
+
+/* Styling for the homepage of the website */
+
+#homepage-main{
+    margin-top: 50px;
+    background-image: url(images/IMG_5322.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    color: rgb(71, 71, 71);
+}
+
+/* Styling for aside element with social media links */
+#homepage-main aside ul{
+    margin-left: 40px;
+    padding-top: 50px;
+    list-style-type: none;
+}
+
+#homepage-main aside ul li{
+    margin-bottom: 40px;
+}
+
+#homepage-main aside ul li a{
+    text-decoration: none;
+    color: rgb(53, 53, 53);
+}
+
+#homepage-main aside ul li a:hover{
+    color: rgb(110, 107, 107);
+    transition: color 0.3s;
+}
+
+.fa-brands{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#homepage-main aside ul li a:hover .fa-brands{
+    color: rgb(89, 132, 132);
+    transition: color 0.3s;
+}
+
+
+/* Styling for homepage text including name and description */
+#homepage-main section{
+    margin-left: 200px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+#homepage-main section h1{
+    font-size: 60px;
+    margin-bottom: 35px;
+}
+
+#homepage-main section h1::first-letter{
+    color: rgb(74, 112, 112);
+}
+#homepage-main section p{
+    width: 700px;
+    line-height: 30px;
+    font-size: 17px;
+    padding-bottom: 40px;
+}
+
+#homepage-main section button{
+    margin-top: 30px;
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: rgba(102, 102, 102,0.8);
+    border: 1px solid white;
+    cursor: pointer;
+    width: 300px;
+}
+
+#homepage-main section button a{
+    color: rgb(169, 223, 223);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#homepage-main section button:hover{
+    background-color: rgb(60, 60, 60);
+    transition: all 0.5s;
+}
+
+.fa-circle-arrow-down{
+    font-size: 40px;
+    color: rgb(79, 79, 79);
+    margin-left: 410px;
+    margin-top: 35px;
+}
+
+.fa-circle-arrow-down:hover{
+    color: rgb(169, 223, 223);
+    transition: color 0.3s;
+}
+
+/* Styling for the blog and projects section of the home page */
+#homepage-blog{
+    background-color: rgba(165, 165, 165, 0.8);
+}
+
+#homepage-blog h1{
+    color: #474747;
+    padding-top: 70px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.homepage-blog{
+    text-align: center;
+}
+
+.homepage-blog h2{
+    padding-bottom: 40px;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.homepage-blog figure{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.homepage-blog figure img{
+    width: 300px;
+    border: 4px solid rgb(169, 223, 223);
+}
+
+.homepage-blog figure figcaption{
+    margin-top: 40px;
+    font-weight: 500;
+    background-color: white;
+    padding: 5px 10px;
+}
+
+.homepage-blog figure img:hover{
+    box-shadow: 10px 10px 10px -7px black;
+    transition: all 1s;
+}
+
+.homepage-projects-thumbnail{
+    height: 400px;
+    width: 300px;
+    border: 4px solid rgb(169, 223, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #464646;
+    margin-bottom: 40px;
+}
+
+.homepage-projects-title{
+    background-color: white;
+    padding: 5px 10px;
+}
+
+.homepage-projects-thumbnail:hover{
+    box-shadow: 10px 10px 10px -7px black;
+    transition: all 1s;
+}
+
+.homepage-projects a{
+    color: white;
+}
+
+.fa-java, .fa-code{
+    font-size: 100px;
+}
+
+.homepage-blog-button{
+    background-color: #151515;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+}
+.homepage-blog-button a{
+    color: rgb(169, 223, 223);
+    text-decoration: none;
+}
+
+.homepage-blog-button:hover{
+    background-color: #474747;
+    transition: background-color 0.5s;
+}
+
+.fa-arrow-right-long{
+    margin-left: 20px;
+}
+
+/* Styling for the contact section of home page */
+#homepage-contact{
+    background-image: url(images/paul-white-pEUuwxkBOOg-unsplash.jpg);
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#homepage-contact-content{
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+    width: 600px;
+}
+
+#homepage-contact-content h1,p{
+    margin-bottom: 40px;
+}
+
+#homepage-contact-content button{
+    width: 200px;
+    margin-left: 200px;
+    background-color: #474747;
+    border: none;
+    padding: 10px 15px;
+}
+
+#homepage-contact-content button a{
+    text-decoration: none;
+    color: white;
+}
+
+#homepage-contact-content button:hover{
+    background-color: #7e7e7e;
+    transition: background-color 0.5s;
+}
+
+#homepage-contact-content button:hover a{
+    color: black;
+    transition: color 0.5s;
+}
+
+
+/* styling for the about page of the website */
+#aboutpage-main{
+    background-image: url(images/aboutMe.jpg);
+    height: 100vh;
+    background-size: cover;
+    color: rgb(7, 7, 7);
+    padding-top: 40px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutpage-main p{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 800px;
+    padding: 40px;
+}
+
+#aboutpage-main h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 70px;
+}
+
+
+
+
+
+
+
+
+
+/* styling for the blogs page of the website */
+
+
+
+
+
+
+
+/* Styling for the contact page of the website */
+
+
+
+
+
+
+
+
+
+
+
+/* Styling for the footer */
+footer{
+    background-color: #282727;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    height: 150px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 300px 30px 300px
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-icon{
+    color: #b5b5b5;
+}
+
+footer ul li a:hover{
+    text-decoration: underline;
+}
