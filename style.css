@@ -109,6 +109,7 @@ nav ul li a:hover{
     margin-top: 100px;
     display: flex;
     flex-direction: column;
+    
 }
 
 #homepage-main section h1{
@@ -161,7 +162,7 @@ nav ul li a:hover{
 
 /* Styling for the blog and projects section of the home page */
 #homepage-blog{
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(89, 119, 126);
 }
 
 #homepage-blog h1{
@@ -186,6 +187,7 @@ nav ul li a:hover{
     display: flex;
     justify-content: space-around;
     padding-bottom: 50px;
+    flex-wrap: wrap;
 }
 
 .homepage-blog figure img{
@@ -194,7 +196,7 @@ nav ul li a:hover{
 }
 
 .homepage-blog figure figcaption{
-    margin-top: 40px;
+    margin: 40px 20px 30px 20px;
     font-weight: 500;
     background-color: white;
     padding: 5px 10px;
@@ -225,6 +227,7 @@ nav ul li a:hover{
 .homepage-projects-title{
     background-color: white;
     padding: 5px 10px;
+    margin-bottom: 30px;
 }
 
 .homepage-projects-thumbnail:hover{
@@ -379,13 +382,18 @@ nav ul li a:hover{
     width: 300px;
 }
 
+.aboutpage-interest div h2{
+    text-align: left;
+}
+
 #aboutpage-interest1{
-    padding-top: 50px;
     padding: 50px 50px;
+
 }
 
 #aboutpage-interest2{
     padding: 50px 50px;
+    background-color: rgb(134, 144, 147);
 }
 
 #aboutpage-interest1 div{
@@ -415,19 +423,12 @@ nav ul li a:hover{
 }
 
 
+/* styling for the blogs & blogs page of the website */
 
-
-
-
-
-
-
-
-
-/* styling for the blogs page of the website */
+/* Styling for the blog section of the blogs & projects page */
 #blog-section{
     padding-top: 50px;
-    background-color: #dbdbdb;
+    background-color: #cddbdc;
 }
 
 #blog-section article{
@@ -441,7 +442,7 @@ nav ul li a:hover{
 }
 
 #blog-section article img{
-    width: 500px;
+    width: 700px;
     margin-top: 40px;
 }
 
@@ -457,27 +458,188 @@ nav ul li a:hover{
     text-decoration: underline;
 }
 
-#blog-section p{
-    padding-top: 50px;
+#blog-section article section{
+    padding: 20px 50px 20px 50px;
+    
+
 }
 
-#blog-section article p{
-    width: 1100px;
+#blog-section article p section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
+/* Styling for the project section of the blog & projects page */
+#project-section{
+    background-color: rgb(209, 209, 209);
+}
+
+#project-section h1{
+    padding-top: 40px;
+    font-size: 45px;
+    text-align: center;
+}
+
+#project-section div{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    flex-wrap: wrap;
+}
+
+#project-section-java div{
+    height: 400px;
+    width: 300px;
+    background-image: url(images/javaProject.jpg);
+    background-size: cover;
+}
+
+#project-section-java, #project-section-web{
+    display: flex;
+    flex-direction: column;
+}
+
+#project-section-web div{
+    height: 400px;
+    width: 300px;
+    background-image: url(images/webProject.png);
+    background-size: cover;
+}
+
+
+#project-section-web div a, #project-section-java div a{
+    width: 300px;
+}
+
+.project-section-content{
+    align-items: center;
+    width: 500px;
+}
+
+.project-section-content div{
+    border: 5px solid rgb(116, 138, 145);
+}
+
+/* hover over projects in blog page */
+.project-section-content div:hover{
+    box-shadow: 10px 10px black;
+}
+
+.project-section-content p{
+    margin-top: 60px;
+    text-align: center;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
 
 
 
 
 /* Styling for the contact page of the website */
+#contact-section{
+    background-color: rgb(219, 219, 219);
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
 
+#contact-section h1{
+    position: absolute;
+    z-index: 1;
+    margin-top: 250px;
+    font-size: 120px;
+    color: white;
+}
 
+#contact-section main{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 600px;
+    height: 500px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 10;
+    padding-bottom: 40px;
+}
 
+#contact-section main form{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
 
+#contact-section main form label{
+    color: rgb(169, 223, 223);
+}
 
+#contact-section main form input, textarea{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    padding: 5px;
+}
 
+#contact-section main form button{
+    width: 200px;
+    background-color: black;
+    color: rgb(169, 223, 223);
+    padding: 5px 10px;
+    align-self: center;
+    border: none;
+}
 
+#contact-section main form button:hover{
+    background-color: #b2b2b2;
+    color: rgb(49, 99, 99);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#contact-subscribe{
+    background-color: rgba(120, 175, 175, 0.7);
+    width: 500px;
+    height: 200px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#contact-subscribe h2{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#contact-subscribe form{
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-subscribe form input{
+    align-self: center;
+    width: 400px;
+}
+
+#contact-subscribe form button{
+    width: 200px;
+    margin-top: 20px;
+    background-color: black;
+    color: rgb(169, 223, 223);
+    padding: 5px 10px;
+    align-self: center;
+    border: none;  
+}
+
+#contact-subscribe form button:hover{
+    background-color: #4f4f4f;
+    color: rgb(113, 155, 155);
+    cursor: pointer;
+    transition: all 0.5s;
+}
 
 
 
@@ -512,4 +674,61 @@ footer ul li a{
 
 footer ul li a:hover{
     text-decoration: underline;
+}
+
+/* Media queries for responsive web designing */
+@media all and (max-width: 710px){
+    #blog-section article img{
+        width: 300px;
+    }
+}
+
+@media all and (max-width: 1051px){
+    #homepage-main section{
+        margin-left: 50px;
+        width: 100px;
+    }
+
+    #homepage-main{
+        height: auto;
+    }
+
+    #homepage-main section p{
+        color: white;
+        width: 200px;
+    }
+
+    .fa-circle-arrow-down{
+        margin-left: 60px;
+        margin-bottom: 20px;
+    }
+
+    #homepage-main section button{
+        margin-left: -40px;
+        width: 250px;
+    }
+
+    #homepage-contact-content{
+        width: 300px;
+    }
+
+    #homepage-contact-content button{
+        margin-left: 55px;
+    }
+
+    #aboutpage-main p{
+        width: 500px;
+    }
+}
+
+@media all and (max-width: 880px){
+    #aboutpage-content section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #aboutpage-content img{
+        
+    }
+
 }
